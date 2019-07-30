@@ -1,0 +1,6 @@
+{
+  "FLAGS": {
+    "FEATURE_1": true,
+    "FEATURE_2": false
+  }
+}

@@ -1,0 +1,22 @@
+
+
+<h1 style="text-align: center">Featured Flags using 'ngx-feature-toggle'</h1>
+
+
+<feature-toggle-provider [features]="featureToggleData">
+  <div *featureToggle="'FEATURE_1'">
+    <h2>Feature:1</h2><p>Condition is true and "featureToggle" is enabled for <span style="color: blue">FEATURE_1 !</span></p>
+  </div>
+  <div *featureToggle="'FEATURE_2'">
+    <p>
+    <h2>Feature:2</h2><p>Condition is true and "featureToggle" is enabled for <span style="color: red">FEATURE_2 !</span>
+    </p>
+  </div>
+  <!--<div *featureToggleWhenDisabled="'enableFirstText'">
+    <p>
+      condition is false and "featureToggle" is disabled
+      <b>and it has "featureToggleWhenDisabled" directive.</b> In that case this content should be
+      rendered.
+    </p>
+  </div>-->
+</feature-toggle-provider>
